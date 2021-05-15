@@ -435,7 +435,8 @@
 			baseConfigurationReference = 6FAB94D9E5C11B6837927924 /* Pods-codepush-codepushTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 96X7V8LRD3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -454,6 +455,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/codepush.app/codepush";
 			};
 			name = Debug;
@@ -463,8 +466,9 @@
 			baseConfigurationReference = 52BBC2945446FF278A0DAC73 /* Pods-codepush-codepushTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 96X7V8LRD3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = codepushTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,6 +483,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/codepush.app/codepush";
 			};
 			name = Release;
@@ -489,8 +495,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 96X7V8LRD3;
+				DEVELOPMENT_TEAM = CRMD87NG9D;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = codepush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -502,8 +510,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.codepush-dotn";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.logic-is.Carewing";
 				PRODUCT_NAME = codepush;
+				PROVISIONING_PROFILE_SPECIFIER = "AdHoc Carewing";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,8 +525,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 96X7V8LRD3;
+				DEVELOPMENT_TEAM = CRMD87NG9D;
 				INFOPLIST_FILE = codepush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,8 +539,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.codepush-dotn";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.logic-is.Carewing";
 				PRODUCT_NAME = codepush;
+				PROVISIONING_PROFILE_SPECIFIER = "AdHoc Carewing";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
